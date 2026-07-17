@@ -25,3 +25,5 @@ https://vford.me/cyber.pdf
 - https://practice.ctfcyber.org/ 
 
 #### Day 5
+- https://shop.hak5.org/ Pineapple, etc.
+- Hide Wifi SSID at router level 

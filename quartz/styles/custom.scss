@@ -1,3 +1,43 @@
-@use "./variables.scss" as *;
+// Paste this into quartz/styles/custom.scss
+// (create the file if it doesn't already exist)
 
-// put your custom CSS here!
+// --- Visually mark "bridges" (personal notes) pages ---
+// In frontmatter, add:  cssclasses: [bridges]
+// to any note in content/bridges/ so it picks up this styling.
+.bridges {
+  font-family: "Lora", var(--bodyFont); // swap in a serif for a more personal, journal-like feel
+  line-height: 1.65;
+
+  .article-title {
+    font-style: italic;
+  }
+}
+
+// --- Nicer hover-preview (popover) cards on internal links ---
+.popover {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  font-family: var(--bodyFont);
+  max-width: 300px;
+}
+
+// --- Slightly bigger click targets + underline-on-hover for links, easier for students on trackpads ---
+a.internal,
+a.external {
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+}
+a.internal:hover,
+a.external:hover {
+  text-decoration-color: var(--secondary);
+}
+
+// --- Explorer folder tree: slightly bolder top-level folder names (classroom / bridges) ---
+#explorer-content > .folder-outer > .folder-title {
+  font-weight: 700;
+}
+
+// --- Optional: soften the background tint specifically behind bridges content ---
+[data-slug^="bridges"] .center {
+  background-color: color-mix(in srgb, var(--light) 96%, var(--tertiary));
+}
