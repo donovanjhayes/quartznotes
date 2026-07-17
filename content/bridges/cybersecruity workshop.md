@@ -27,3 +27,5 @@ https://vford.me/cyber.pdf
 #### Day 5
 - https://shop.hak5.org/ Pineapple, etc.
 - Hide Wifi SSID at router level 
+- https://gandalf.lakera.ai/baseline 
+- Buzzer for games Docker

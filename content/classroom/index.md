@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Classroom
 ---
 Classroom links and updates
 

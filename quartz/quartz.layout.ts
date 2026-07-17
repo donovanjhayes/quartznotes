@@ -38,7 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      folderDefaultState: "collapsed", // click-to-expand "dropdown" folders
+      folderDefaultState: "open", // keep classroom folders expanded by default
       folderClickBehavior: "link", // clicking a folder name opens its index page
       sortFn: (a, b) => {
         // pin classroom above bridges, alphabetical within each
@@ -92,7 +92,7 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      folderDefaultState: "collapsed",
+      folderDefaultState: "collapsed", // collapse personal notes
       sortFn: (a, b) => {
         const order = ["classroom", "bridges"]
         const ai = order.indexOf(a.name ?? "")
