@@ -3,7 +3,7 @@
 - DNS over HTTPS override, go to settings in firefox: To use Google Public DNS-over-HTTPS (DoH), configure your device or browser to use https://dns.google/dns-query 
 
 
-https://vford.me/cyber.pdf ![[cyberslides.pdf]]
+https://vford.me/cyber.pdf
 
 #### Day 2
 - DRY, YAGNI, SOLID, KISS, SRP acronyms for coding
