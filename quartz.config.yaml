@@ -1,24 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
-  pageTitleSuffix: ""
-  enableSPA: true
-  enablePopovers: true
-  analytics:
-    provider: plausible
-  locale: en-US
-  baseUrl: https://quartznotes-a0o.pages.dev
-  ignorePatterns:
-    - private
-    - templates
-    - .obsidian
+  pageTitle: "Hayes Notes"
+  baseUrl: quartznotes-a0o.pages.dev/   # <- your actual Cloudflare Pages domain
   theme:
-    fontOrigin: googleFonts
-    cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      header: Space Grotesk
+      body: Atkinson Hyperlegible
+      code: JetBrains Mono
     colors:
       lightMode:
         light: "#faf8f8"
@@ -28,7 +16,7 @@ configuration:
         dark: "#2b2b2b"
         secondary: "#284b63"
         tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
+        highlight: rgba(40, 75, 99, 0.15)
         textHighlight: "#fff23688"
       darkMode:
         light: "#161618"
@@ -40,6 +28,16 @@ configuration:
         tertiary: "#84a59d"
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#b3aa0288"
+  pageTitleSuffix: ""
+  enableSPA: true
+  enablePopovers: true
+  analytics:
+    provider: plausible
+  locale: en-US
+  ignorePatterns:
+    - private
+    - templates
+    - .obsidian
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -144,6 +142,10 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
+    options:
+      title: "Explorer"              # removes the "Explorer" header text
+      folderClickBehavior: link
+      folderDefaultState: open   # classroom/bridges show expanded, no click needed
     layout:
       position: left
       priority: 50
