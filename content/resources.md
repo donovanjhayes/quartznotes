@@ -23,3 +23,5 @@ https://vford.me/cyber.pdf ![[cyberslides.pdf]]
 - Wireshark, open pcap file and filter http, then right click, follow HTTP, then TCP
 - hexed.it  https://steghide.com/ and exiftool online, binwalk , photopea 
 - https://practice.ctfcyber.org/ 
+
+#### Day 5
